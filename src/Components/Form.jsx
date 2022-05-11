@@ -21,10 +21,6 @@ class Form extends PureComponent {
 
     submitForm = (e) => {
         e.preventDefault();
-        Swal.fire({
-            icon: 'info',
-            title: 'حالا حدس بزن',
-        });
         if(this.input.current.value === '') {
             Swal.fire({
                 icon: 'error',
